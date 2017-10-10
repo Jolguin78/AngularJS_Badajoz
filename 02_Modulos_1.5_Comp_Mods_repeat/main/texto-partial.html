@@ -1,0 +1,14 @@
+<p>
+    Titular de noticia 
+    <br/>
+    <span class="aviso" ng-mouseover="vm.verTexto=true" ng-mouseleave="vm.verTexto=false" style="cursor:pointer; color:rgb(49, 105, 201)" >
+        {{vm.verTexto ? 'Ver menos' : 'Ver más'}}
+    </span>
+    <br/>
+    <span ng-show="vm.verTexto">
+            Una forma muy eficiente de eliminar elementos de una lista, sobre todo si son muchos, es usar filter. Este método crea 
+            un nuevo array con todos los elementos del array original que pasen un test; el test es una función que pasas como parámetro. 
+            Por ejemplo, para obtener solo los elementos pares de un array.
+    </span>
+    
+</p>

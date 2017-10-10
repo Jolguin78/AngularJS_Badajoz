@@ -1,0 +1,17 @@
+<article>
+  <p>
+      <label for="name">Introduzca elemento:</label>
+      <input id="name" type="text" ng-model="vm.sName">
+  </p>
+  <p>
+      <button ng-click="vm.btnAnadir()">Añadir</button>
+  </p>
+  <div ng-if="vm.sLista.length > 0">
+    <h1>Lista de elementos insertados</h1>
+    <ul>
+            <li ng-repeat="persona in vm.sLista track by $index"> <!-- Sin "track by $index" no se podrían insertar elementos repetidos-->
+                Elemento: {{persona}}
+            </li>
+    </ul>
+  </div>
+</article>
