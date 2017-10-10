@@ -1,8 +1,7 @@
 class AppController {
-    $onInit() {
-        this.sName='Giusseppe';
-    }   
+  $onInit() {
+   this.sCurso='AngularJS'; 
+  }
 }
-
-angular.module("appModule",[])
+angular.module("appModule")
 .controller("AppController", AppController);

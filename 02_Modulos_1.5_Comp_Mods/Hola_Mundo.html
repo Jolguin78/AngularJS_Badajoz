@@ -8,17 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="../node_modules/angular/angular.min.js"></script>
         <script src="./app.js"></script>
-        <script src="./app-controller.js"></script>
-        <script src="./saludo-component.js"></script>
+        <script src="./main/main-component.js"></script>
+        <script src="./main/saludo-component.js"></script>
+        <script src="./shared/shared.js"></script>
+        <script src="./shared/cabecera-component.js"></script>
+        <script src="./shared/pie-component.js"></script>
     </head>
-    <body ng-app="appModule" ng-controller="AppController as vm">
-        <header>
-            <h1>Hola Mundo</h1>
-        </header>
-        <app-saludo></app-saludo>
-        <footer>
-            <p>Curso de {{vm.sCurso}}</p>    
-        </footer>      
-        
+    <body ng-app="appModule">
+        <app-main></app-main>  
     </body>
 </html>
