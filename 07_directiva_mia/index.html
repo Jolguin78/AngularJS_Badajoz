@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hola Mundo</title>
+        <meta name="description" content="Hola mundo con AngularJS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./estilos.css">
+        <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="../node_modules/angular-i18n/angular-locale_es-es.js"></script>
+        <script src="./app.js"></script>
+        <script src="./directivas.js"></script>
+    </head>
+    <body ng-app="appModule" ng-controller="MainController as $ctrl">
+        <app-cabecera></app-cabecera>  <!-- de tipo Elemento -->
+        <div app-cabecera></div> <!-- de tipo Atributo -->
+        <div class="app-cabecera"></div> <!-- de tipo Clase -->
+    </body>
+</html>

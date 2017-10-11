@@ -6,6 +6,7 @@ angular.module('appModule')
     var tempTareas = localStorageService.get('tareas');
 
     $scope.aTareas = tempTareas && tempTareas.split('\n') || [];
+    // $watch y $watchCollection son manejadores de eventos que ejecutan una función tras el cambio en una variable o colección
     $scope.$watchCollection('aTareas', function () {
     localStorageService.add('tareas', $scope.aTareas.join('\n'));   
       }, true);
